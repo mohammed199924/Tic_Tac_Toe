@@ -14,6 +14,9 @@
 		E60ED7A01B45C02E00A10AE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60ED79E1B45C02E00A10AE2 /* LaunchScreen.storyboard */; };
 		E60ED7AB1B45C02E00A10AE2 /* Tic_Tac_ToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60ED7AA1B45C02E00A10AE2 /* Tic_Tac_ToeTests.swift */; };
 		E60ED7B61B45C02E00A10AE2 /* Tic_Tac_ToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60ED7B51B45C02E00A10AE2 /* Tic_Tac_ToeUITests.swift */; };
+		E68EA6C21B45C63100EF0CFF /* wood-texture-background-image-5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E68EA6C11B45C63100EF0CFF /* wood-texture-background-image-5.jpg */; };
+		E68EA6C51B45CAD200EF0CFF /* GridLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68EA6C31B45C70600EF0CFF /* GridLabel.swift */; };
+		E68EA6C61B46EA0800EF0CFF /* GridLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68EA6C31B45C70600EF0CFF /* GridLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,8 @@
 		E60ED7B11B45C02E00A10AE2 /* Tic Tac ToeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tic Tac ToeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E60ED7B51B45C02E00A10AE2 /* Tic_Tac_ToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tic_Tac_ToeUITests.swift; sourceTree = "<group>"; };
 		E60ED7B71B45C02E00A10AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E68EA6C11B45C63100EF0CFF /* wood-texture-background-image-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "wood-texture-background-image-5.jpg"; path = "../wood-texture-background-image-5.jpg"; sourceTree = "<group>"; };
+		E68EA6C31B45C70600EF0CFF /* GridLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridLabel.swift; path = "Tic Tac ToeTests/GridLabel.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,7 @@
 				E60ED7A91B45C02E00A10AE2 /* Tic Tac ToeTests */,
 				E60ED7B41B45C02E00A10AE2 /* Tic Tac ToeUITests */,
 				E60ED7931B45C02E00A10AE2 /* Products */,
+				E68EA6C11B45C63100EF0CFF /* wood-texture-background-image-5.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +103,9 @@
 		E60ED7941B45C02E00A10AE2 /* Tic Tac Toe */ = {
 			isa = PBXGroup;
 			children = (
-				E60ED7951B45C02E00A10AE2 /* AppDelegate.swift */,
 				E60ED7971B45C02E00A10AE2 /* ViewController.swift */,
+				E68EA6C31B45C70600EF0CFF /* GridLabel.swift */,
+				E60ED7951B45C02E00A10AE2 /* AppDelegate.swift */,
 				E60ED7991B45C02E00A10AE2 /* Main.storyboard */,
 				E60ED79C1B45C02E00A10AE2 /* Assets.xcassets */,
 				E60ED79E1B45C02E00A10AE2 /* LaunchScreen.storyboard */,
@@ -228,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E68EA6C21B45C63100EF0CFF /* wood-texture-background-image-5.jpg in Resources */,
 				E60ED7A01B45C02E00A10AE2 /* LaunchScreen.storyboard in Resources */,
 				E60ED79D1B45C02E00A10AE2 /* Assets.xcassets in Resources */,
 				E60ED79B1B45C02E00A10AE2 /* Main.storyboard in Resources */,
@@ -255,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E68EA6C51B45CAD200EF0CFF /* GridLabel.swift in Sources */,
 				E60ED7981B45C02E00A10AE2 /* ViewController.swift in Sources */,
 				E60ED7961B45C02E00A10AE2 /* AppDelegate.swift in Sources */,
 			);
@@ -264,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E68EA6C61B46EA0800EF0CFF /* GridLabel.swift in Sources */,
 				E60ED7AB1B45C02E00A10AE2 /* Tic_Tac_ToeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +493,7 @@
 				E60ED7BC1B45C02E00A10AE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E60ED7BD1B45C02E00A10AE2 /* Build configuration list for PBXNativeTarget "Tic Tac ToeTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +502,7 @@
 				E60ED7BF1B45C02E00A10AE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E60ED7C01B45C02E00A10AE2 /* Build configuration list for PBXNativeTarget "Tic Tac ToeUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +511,7 @@
 				E60ED7C21B45C02E00A10AE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
