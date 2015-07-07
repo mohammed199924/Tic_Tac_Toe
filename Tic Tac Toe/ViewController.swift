@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var backgroundView: UIView!
     var labelArray :[GridLabel]!
     var xTurn = true
-    
+    var turn = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,9 @@ class ViewController: UIViewController {
         //var a = GridLabel()
         //print(a.canTap)
     }
+   
     @IBAction func onTappedChangeLabel(sender: UITapGestureRecognizer) {
+        ++turn
         for label in labelArray {
             if label.canTap {
                 if CGRectContainsPoint(label.frame, sender.locationInView(backgroundView)){
@@ -39,30 +41,32 @@ class ViewController: UIViewController {
                     else {label.text = "O"}
                     xTurn = !xTurn
                     label.canTap = false
-                checkForWinner()
-                }
+                    checkForWinner()
+                  print(turn)
                 }
             }
-          }
-
-    func checkForWinner() {
-        check(0, b: 1, c: 2)
-        check(3, b: 4, c: 5)
-        check(6, b: 7, c: 8)
-        check(0, b: 4, c: 8)
-        check(2, b: 4, c: 6)
-        check(0, b: 3, c: 6)
-        check(1, b: 4, c: 7)
-        check(2, b: 5, c: 8)
+        }
     }
-    func check(a: Int, b: Int, c: Int) {
-    if labelArray[a].text = [0 , 3 , 6 , 0 , 2 , 0 , 1 , 2 ] {
-    if labelArray[b].text = [1, 4, 7, 4, 4, 3, 4, 5 ] {
-    if labelArray[c].text = [2, 5, 8, 8, 6, 6, 7, 8 ] {
-        
     
+    
+    func checkForWinner() {
+        checkwin(0, b: 1, c: 2)
+        checkwin(3, b: 4, c: 5)
+        checkwin(6, b: 7, c: 8)
+        checkwin(0, b: 4, c: 8)
+        checkwin(2, b: 4, c: 6)
+        checkwin(0, b: 3, c: 6)
+        checkwin(1, b: 4, c: 7)
+        checkwin(2, b: 5, c: 8)
+        
     }
+    func checkwin(a: Int, b: Int, c: Int) {
+        if (labelArray[a].text != "" && labelArray[a].text != nil) {
+            //print("\(a) is not nil")
+            if (labelArray[a].text == labelArray[b].text && labelArray[b].text == labelArray[c].text){
+                print("winner")}
+        }
     }
-    }
+    
 }
-}
+    
